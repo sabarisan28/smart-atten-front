@@ -3,11 +3,12 @@ import './App.css'
 
 function Home() {
   return (
-    <div>
-      <h1>Smart Attendance System</h1>
+    <div style={{ padding: '20px' }}>
+      <h1>🎓 Smart Attendance System</h1>
       <p>Welcome to the homepage!</p>
-      <nav>
-        <Link to="/login">Login</Link> | <Link to="/dashboard">Dashboard</Link>
+      <nav style={{ margin: '20px 0' }}>
+        <Link to="/login" style={{ marginRight: '20px', color: 'blue' }}>Login</Link>
+        <Link to="/dashboard" style={{ color: 'blue' }}>Dashboard</Link>
       </nav>
     </div>
   )
@@ -15,20 +16,20 @@ function Home() {
 
 function Login() {
   return (
-    <div>
-      <h1>Login Page</h1>
+    <div style={{ padding: '20px' }}>
+      <h1>🔐 Login Page</h1>
       <p>This is the login page</p>
-      <Link to="/">Back to Home</Link>
+      <Link to="/" style={{ color: 'blue' }}>← Back to Home</Link>
     </div>
   )
 }
 
 function Dashboard() {
   return (
-    <div>
-      <h1>Dashboard</h1>
+    <div style={{ padding: '20px' }}>
+      <h1>📊 Dashboard</h1>
       <p>This is the dashboard page</p>
-      <Link to="/">Back to Home</Link>
+      <Link to="/" style={{ color: 'blue' }}>← Back to Home</Link>
     </div>
   )
 }
